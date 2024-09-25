@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form action="/cgi-bin/add_task.py" method="POST">
+        <input type="text" name="task" placeholder="Enter a new task" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <hr>
+    <iframe src="/cgi-bin/get_tasks.py" width="100%" height="400"></iframe>
+</body>
+</html>
